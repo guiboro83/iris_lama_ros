@@ -7,7 +7,7 @@ if (NOT CMAKE_BUILD_TYPE)
 endif()
 
 find_package(Eigen3 REQUIRED NO_MODULE)
-find_package(iris_lama REQUIRED COMPONENTS iris_lama)
+find_package(iris_lama REQUIRED)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

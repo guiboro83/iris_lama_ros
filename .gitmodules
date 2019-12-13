@@ -1,0 +1,3 @@
+[submodule "iris_lama"]
+	path = iris_lama
+	url = https://github.com/iris-ua/iris_lama.git
