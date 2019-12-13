@@ -7,7 +7,6 @@ if (NOT CMAKE_BUILD_TYPE)
 endif()
 
 find_package(Eigen3 REQUIRED NO_MODULE)
-find_package(iris_lama REQUIRED)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -31,6 +30,8 @@ catkin_package()
 ## Build ##
 ###########
 
+add_subdirectory(iris_lama)
+include_directories(iris_lama/include)
 ## Specify additional locations of header files
 include_directories(include ${catkin_INCLUDE_DIRS})
 add_subdirectory(src)
